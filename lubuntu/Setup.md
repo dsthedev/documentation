@@ -33,7 +33,12 @@ sudo apt-get install typora
 ~$ sudo dpkg -i ~/Resources/Applications/sublime-text_build-3126_amd64.deb;sudo apt-get install -f
 ```
 
+## Command Line Tools
 
+### Git
+
+* `~$ sudo apt-get install git -y`
+* `~$ git config --global -e`
 
 ## Resources
 
