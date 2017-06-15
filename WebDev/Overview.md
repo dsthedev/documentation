@@ -6,17 +6,27 @@ Eventually this will be split into individual documents, then linked together as
 
 ## Hosting
 
-* Hosting environment
-  * WordPress?
-    * PHP 7 (5.6 supported)
-    * MySQL
-  * SSL ([Let's Encrypt](https://letsencrypt.org/))
-    * List of hosts that support Lets Encrypt [here](https://community.letsencrypt.org/t/web-hosting-who-support-lets-encrypt/6920)
-  * [Cloudflare](https://www.cloudflare.com/)
-  * Recommended Hosts
-    * [Siteground](https://www.siteground.com/), [Geekghost](http://geekghost.net/), more to come
-* Developer access
+The First thing that needs to be done when a new website is desired, is to find a good host to deploy it on.  The files that power a website need to be hosted somewhere, so they can be accessed via an IP address or URL.  There are many ways to do this, but the most common and easiest way is with a shared hosting account.  Ranging from $4-20 per month, they're a really cheap and viable way to get started.  If the website gains a lot of traffic, a VPS or cloud based option should be considered instead.  VPS's can range from \$20-600 per month, so more research on actual resource usage should also be done at that point.
 
+### Choosing a Host Environment
+
+To run a basic WordPress installation, the host environment technically only needs to support the following:
+
+* PHP 7 (5.6 supported)
+* MySQL
+
+That being said, most decent hosts will support PHP and MySQL.  But, be careful of the very low end hosting plans.  Their servers have extremely low resources, and will make even installing WordPress a slow and painful process.  Plus, the low end hosts are insecure and don't work well with CDN services.  So, for a more secure, robust, and generally better experience it should also support:
+
+* SSL - [Let's Encrypt](https://letsencrypt.org/)
+* [Cloudflare](https://www.cloudflare.com/)
+* FTP Access
+
+Installing WordPress on the host is quite simple, however those instructions won't be found here.  There will be a write-up here eventually, but for now the instructions on the [WordPress codex](https://codex.wordpress.org/Installing_WordPress) should suffice.
+
+### Recommended Hosts
+
+* [Siteground](https://www.siteground.com/)
+* [Geekghost](http://geekghost.net/)
 
 
 
