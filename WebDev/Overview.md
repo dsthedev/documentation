@@ -30,6 +30,28 @@ Installing WordPress on the host is quite simple, however those instructions won
 
 
 
+## Project Folder (Optional)
+
+Projects should have a central folder that follow a shared structure with others.  This is especially true if there will be multiple projects, and even more so when multiple people will be contributing.  A typical project folder will have the following structure:
+
+* `projectname` - Contains all files and resources necessary for the project.
+  * `backups` - Backups of the website
+    * `20170715/` - This date format will auto sort this folder newest to oldest!
+  * `content/` - Sitemaps, copy drafts, notes about products, etc
+  * `design/` - Wireframes, designs, mockups, etc
+  * `resources/` - Project-wide necessary files
+    * `data/` - Spreadsheets, exported content, etc.
+    * `fonts/`
+    * `images/`
+  * `website/` -  Development files, 
+    * `localhost/` - A symbolic link pointing to the developers web root (`/var/www/sitename`, `/Applications/MAMP/htdocs/sitename`)
+    * `staging/` - A folder that is synchronized to the websites hosted staging location.  Typically only specific plugins and themes are synchronized.
+  * `.config/` - Place sftp-config files here, as well as any access documents with passwords or database credentials.  Easily nukeable, never committed!
+
+There are a few things to notice about the project folder above.  The naming convention is simple and semantic, the folders are split by function, and the resources folder contains things shared by both design and development.  It is also just an example, so adjust accordingly and make the project folder reflect the needs of the project.
+
+
+
 
 ## Content
 
