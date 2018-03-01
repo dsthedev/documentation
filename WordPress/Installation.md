@@ -24,6 +24,22 @@ This document will cover getting the latest version of WordPress, installing it 
 	- View home page & nested pages like the sample page
 6. Move on to configuring the new site
 
+## WP-CLI
+
+1. Make sure you have php installed and in your path so you can execute it globally.
+2. Download [wp-cli.phar](https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar) manually and save it to a folder, for example `c:\wp-cli`
+3. Create a file named `wp.bat` in `c:\wp-cli\` with the following contents:
+
+```bat
+@ECHO OFF
+php "c:/wp-cli/wp-cli.phar" %*
+```
+
+4. **DO NOT DO THIS!** *It will do weird stuff to path variable.  Add it manually instead!* Add c:\wp-cli to your path:
+	5. `setx path "%path%;c:\wp-cli"`
+
+You can now use WP-CLI from anywhere in Windows command line.
+
 ## Resources
 
 - [MAMP](https://www.mamp.info/en/downloads/)

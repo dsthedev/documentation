@@ -49,7 +49,8 @@
     "window.menuBarVisibility": "toggle",
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
-    "explorer.sortOrder": "type"
+    "explorer.sortOrder": "type",
+    "editor.tabSize": 2,
 }
 ```
 
@@ -78,3 +79,4 @@
 ## Thoughts
 
 * The git integration is super nice, but the commands and branch management are kind of weird
+* I wonder if I can automate my VSCode configuration with a bash or powershell script?
