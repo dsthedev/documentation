@@ -8,6 +8,10 @@
 
 * [Markdown All in One](https://github.com/neilsustc/vscode-markdown)
   * Enable auto preview
+* [htmltagwrap](https://github.com/bgashler1/vscode-htmltagwrap)
+* [markdownlint](https://github.com/mkloubert/vscode-deploy-reloaded)
+* [Nomo Dark Icon Theme](https://github.com/be5invis/vscode-iconset)
+* [Deploy (Reloaded)](https://github.com/mkloubert/vscode-deploy-reloaded)
 
 ## Keyboard Shortcuts
 
@@ -16,6 +20,15 @@
 * Terminal/Powershell: `ctrl+`\`
 * Duplicate Line: `alt+shift+up|down`
 * Keyboard Shortcut Viewer: `ctrl+k>s`
+* Open Workspace: `ctrl+l>o` (Custom)
+
+## Custom Keybindings
+
+```json
+[
+    { "key": "ctrl+l ctrl+o",    "command": "workbench.action.openWorkspace" },
+]
+```
 
 ## User Settings
 
