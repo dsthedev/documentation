@@ -13,11 +13,38 @@
 
 * Extension marketplace: `ctrl+shift+x`
 * Settings: `ctrl+,`
+* Terminal/Powershell: `ctrl+`\`
+* Duplicate Line: `alt+shift+up|down`
+* Keyboard Shortcut Viewer: `ctrl+k>s`
 
-## Impression
+## User Settings
 
-* [Start]() screen is nice; start, recent, help, customize, and learn are all useful
-* ​
+```json
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "markdown.extension.preview.autoShowPreviewToSide": true,
+    "workbench.colorTheme": "Sea Green Theme",
+    "workbench.iconTheme": "vs-nomo-dark",
+    "editor.fontFamily": "'Source Code Pro', 'Courier New', monospace",
+    "editor.fontSize": 14,
+    "editor.cursorStyle": "line-thin",
+    "editor.insertSpaces": false,
+    "editor.cursorBlinking": "phase",
+    "editor.renderControlCharacters": true,
+    "editor.rulers": [40,80,120],
+    "editor.smoothScrolling": true,
+    "window.menuBarVisibility": "toggle",
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "explorer.sortOrder": "type"
+}
+```
+
+## First Impressions
+
+* Start screen is nice; start, recent, help, customize, and learn are all useful
+* Built in keyboard shortcut cheat sheet with search is amazing
+* Built in terminal/powershell?  Awesome, no need for gitbash anymore
 
 ## License
 
@@ -37,4 +64,4 @@
 
 ## Thoughts
 
-* The git integration is nice, but kind of weird too
+* The git integration is super nice, but the commands and branch management are kind of weird
