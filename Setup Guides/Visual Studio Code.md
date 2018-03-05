@@ -51,6 +51,13 @@
     "files.trimTrailingWhitespace": true,
     "explorer.sortOrder": "type",
     "editor.tabSize": 2,
+    "php.validate.executablePath": "E:/MAMP/bin/php/php7.1.5/php.exe",
+    "files.associations": {
+        "*.lmo": "html" // Libercus scripting language mixes with HTML
+    },
+    "markdownlint.config": {
+        "MD010": false, // Tabs for life!
+    }
 }
 ```
 
