@@ -54,6 +54,40 @@
 }
 ```
 
+## Snippets
+
+### PHP
+
+```json
+{
+	"PHP Class | dsthedev": {
+		"prefix": "class",
+		"body": [
+			"/**",
+			" * ${1:ClassName} - ${2:Class Summary}${4:",
+			" *",
+			" * @${3:param details}}",
+			" */",
+			"class ${1:ClassName} {",
+				"\t$5",
+			"}",
+		],
+		"description": "Simple PHP Class by dsthedev"
+	},
+	"DocComment | dsthedev": {
+		"prefix": "doccomment",
+		"body": [
+			"/**",
+			" * ${1:Summary}${3:",
+			" *",
+			" * @${2:param details}}",
+			" */",
+		],
+		"description": "Simple DocComment by dsthedev"
+	}
+}
+```
+
 ## First Impressions
 
 * Start screen is nice; start, recent, help, customize, and learn are all useful
