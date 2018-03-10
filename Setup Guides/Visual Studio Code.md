@@ -34,23 +34,41 @@
 
 ```json
 {
-    "workbench.startupEditor": "newUntitledFile",
-    "markdown.extension.preview.autoShowPreviewToSide": true,
-    "workbench.colorTheme": "Sea Green Theme",
-    "workbench.iconTheme": "vs-nomo-dark",
-    "editor.fontFamily": "'Source Code Pro', 'Courier New', monospace",
-    "editor.fontSize": 14,
-    "editor.cursorStyle": "line-thin",
-    "editor.insertSpaces": false,
-    "editor.cursorBlinking": "phase",
-    "editor.renderControlCharacters": true,
-    "editor.rulers": [40,80,120],
-    "editor.smoothScrolling": true,
-    "window.menuBarVisibility": "toggle",
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
-    "explorer.sortOrder": "type",
-    "editor.tabSize": 2,
+  "workbench.startupEditor": "none",
+  "markdown.extension.preview.autoShowPreviewToSide": true,
+  "workbench.colorTheme": "Sea Green Theme",
+  "workbench.iconTheme": "vs-nomo-dark",
+  "editor.fontFamily": "'Source Code Pro', 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "editor.cursorStyle": "line-thin",
+  "editor.insertSpaces": false,
+  "editor.cursorBlinking": "phase",
+  "editor.renderControlCharacters": true,
+  "editor.rulers": [40,80,120],
+  "editor.smoothScrolling": true,
+  "window.menuBarVisibility": "toggle",
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "explorer.sortOrder": "type",
+  "editor.tabSize": 2,
+  "explorer.confirmDelete": false,
+  "php.validate.executablePath": "W:/MAMP/bin/php/php7.1.7/php.exe",
+  "php.executablePath": "W:/MAMP/bin/php/php7.1.7/php.exe",
+  "php.suggest.basic": false,
+  "markdownlint.config": {
+    "MD007": false,
+    "MD010": false,
+  },
+  // "deploy.reloaded": {
+  //   "clearOutputOnStartup": true,
+  //   "openOutputOnStartup": false,
+  // },
+  "workbench.colorCustomizations":{
+		"editorActiveLineNumber.foreground": "#BADA55",
+  },
+  "files.associations": {
+    "*.json": "jsonc"
+  }
 }
 ```
 
