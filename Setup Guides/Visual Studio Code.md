@@ -26,7 +26,18 @@
 
 ```json
 [
-    { "key": "ctrl+l ctrl+o",    "command": "workbench.action.openWorkspace" },
+	{
+		"key": "ctrl+l ctrl+o",
+		"command": "workbench.action.openWorkspace"
+	},
+	{
+		"key": "ctrl+l ctrl+s",
+		"command": "workbench.action.openSnippets"
+	},
+	{
+		"key": "ctrl+shift+r",
+		"command": "workbench.files.action.refreshFilesExplorer"
+	},
 ]
 ```
 
@@ -67,7 +78,8 @@
 		"editorActiveLineNumber.foreground": "#BADA55",
   },
   "files.associations": {
-    "*.json": "jsonc"
+    "*.json": "jsonc",
+    "*.lmo": "html" // Libercus scripting language mixes with HTML
   }
 }
 ```
