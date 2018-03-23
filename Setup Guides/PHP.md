@@ -10,6 +10,18 @@ Eventually I'd like to have custom installation instructions in here.  For now i
 	4. zend_extension = E:\MAMP\bin\php\php7.1.5\ext\php_xdebug-2.6.0-7.1-vc14.dll
 5. Restart the webserver
 
+Optionally, add the following for a custom IP/Port setup:
+
+```ini
+[XDebug]
+zend_extension = C:\php\ext\php_xdebug-2.6.0-7.1-vc14.dll
+xdebug.remote_autostart=1
+xdebug.remote_enable=1
+xdebug.remote_host=172.16.64.202
+xdebug.remote_port=9000
+xdebug.remote_handler=dbgp
+```
+
 ## Add PHP to Windows Path
 
 This needs to be done to use `php` from command prompt and powershell.

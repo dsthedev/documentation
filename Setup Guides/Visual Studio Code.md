@@ -38,6 +38,16 @@
 		"key": "ctrl+shift+r",
 		"command": "workbench.files.action.refreshFilesExplorer"
 	},
+	{
+			"key": "ctrl+shift+u",
+			"command": "editor.action.transformToUppercase",
+			"when": "editorTextFocus"
+	},
+	{
+			"key": "ctrl+shift+l",
+			"command": "editor.action.transformToLowercase",
+			"when": "editorTextFocus"
+	}
 ]
 ```
 
@@ -46,7 +56,7 @@
 ```json
 {
     "workbench.startupEditor": "newUntitledFile",
-    "markdown.extension.preview.autoShowPreviewToSide": true,
+    // "markdown.extension.preview.autoShowPreviewToSide": true,
     "workbench.colorTheme": "Sea Green Theme",
     "workbench.iconTheme": "vs-nomo-dark",
     "editor.fontFamily": "'Source Code Pro', 'Courier New', monospace",
@@ -68,11 +78,34 @@
     },
     "markdownlint.config": {
         "MD010": false, // Tabs for life!
-    }
+    },
+    "editor.renderWhitespace": "all",
+    "explorer.confirmDelete": false,
 }
 ```
 
 ## Snippets
+
+### Global
+
+```json
+{
+	"New Junction Link (Psuedo-Symbolic `ln -s`)": {
+		"prefix": "mklink",
+		"body": [
+			"mklink /J $1 $2",
+		],
+		"description": "For CMD prompt only, creates a symbolic link at $1:LinkDir from $2:RealDir"
+	},
+	"Windows Symbolic Link": {
+		"prefix": "symlink",
+		"body": [
+			"New-Item -Path $1 -ItemType SymbolicLink -Value $2",
+		],
+		"description": "For PowerShell, requires Developer mode enabled, Create a symbolic link at $1:LinkDir from $2:RealDir"
+	},
+}
+```
 
 ### PHP
 
