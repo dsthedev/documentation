@@ -39,14 +39,14 @@
 		"command": "workbench.files.action.refreshFilesExplorer"
 	},
 	{
-			"key": "ctrl+shift+u",
-			"command": "editor.action.transformToUppercase",
-			"when": "editorTextFocus"
+		"key": "ctrl+shift+u",
+		"command": "editor.action.transformToUppercase",
+		"when": "editorTextFocus"
 	},
 	{
-			"key": "ctrl+shift+l",
-			"command": "editor.action.transformToLowercase",
-			"when": "editorTextFocus"
+		"key": "ctrl+shift+l",
+		"command": "editor.action.transformToLowercase",
+		"when": "editorTextFocus"
 	}
 ]
 ```
@@ -55,32 +55,32 @@
 
 ```json
 {
-    "workbench.startupEditor": "newUntitledFile",
-    // "markdown.extension.preview.autoShowPreviewToSide": true,
-    "workbench.colorTheme": "Sea Green Theme",
-    "workbench.iconTheme": "vs-nomo-dark",
-    "editor.fontFamily": "'Source Code Pro', 'Courier New', monospace",
-    "editor.fontSize": 14,
-    "editor.cursorStyle": "line-thin",
-    "editor.insertSpaces": false,
-    "editor.cursorBlinking": "phase",
-    "editor.renderControlCharacters": true,
-    "editor.rulers": [40,80,120],
-    "editor.smoothScrolling": true,
-    "window.menuBarVisibility": "toggle",
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
-    "explorer.sortOrder": "type",
-    "editor.tabSize": 2,
-    "php.validate.executablePath": "E:/MAMP/bin/php/php7.1.5/php.exe",
-    "files.associations": {
-        "*.lmo": "html" // Libercus scripting language mixes with HTML
-    },
-    "markdownlint.config": {
-        "MD010": false, // Tabs for life!
-    },
-    "editor.renderWhitespace": "all",
-    "explorer.confirmDelete": false,
+	"workbench.startupEditor": "newUntitledFile",
+	// "markdown.extension.preview.autoShowPreviewToSide": true,
+	"workbench.colorTheme": "Sea Green Theme",
+	"workbench.iconTheme": "vs-nomo-dark",
+	"editor.fontFamily": "'Source Code Pro', 'Courier New', monospace",
+	"editor.fontSize": 14,
+	"editor.cursorStyle": "line-thin",
+	"editor.insertSpaces": false,
+	"editor.cursorBlinking": "phase",
+	"editor.renderControlCharacters": true,
+	"editor.rulers": [40,80,120],
+	"editor.smoothScrolling": true,
+	"window.menuBarVisibility": "toggle",
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+	"explorer.sortOrder": "type",
+	"editor.tabSize": 2,
+	"php.validate.executablePath": "E:/MAMP/bin/php/php7.1.5/php.exe",
+	"files.associations": {
+			"*.lmo": "html" // Libercus scripting language mixes with HTML
+	},
+	"markdownlint.config": {
+			"MD010": false, // Tabs for life!
+	},
+	"editor.renderWhitespace": "all",
+	"explorer.confirmDelete": false,
 }
 ```
 
