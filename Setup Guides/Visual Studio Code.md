@@ -67,6 +67,7 @@
 	"editor.renderControlCharacters": true,
 	"editor.rulers": [40,80,120],
 	"editor.smoothScrolling": true,
+  "explorer.autoReveal": false,
 	"window.menuBarVisibility": "toggle",
 	"files.trimFinalNewlines": true,
 	"files.trimTrailingWhitespace": true,
@@ -135,6 +136,22 @@
 			" */",
 		],
 		"description": "Simple DocComment by dsthedev"
+	}
+}
+```
+
+### SCSS
+
+```json
+{
+	"Media Query | Foundation 6": {
+		"prefix": "fn mediaquery",
+		"body": [
+			"@include breakpoint( ${1:medium} ${2: down|only }) {",
+			"\t$3",
+			"}"
+		],
+		"description": "Create a responsive breakpoint to customize the Foundation framework."
 	}
 }
 ```
