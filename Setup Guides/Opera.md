@@ -23,3 +23,9 @@
       1. Send "Do Not Track" request
       2. Disable auto-fill and password saving
       3. Keep local data only until I quit my browser
+
+### Flags
+
+Because Opera added a new "feature" without giving it a proper setting, sometimes things need to be changed in `opera://flags/`:
+
+* Disable `Scroll Active Tab on Click` (Requires restart)
