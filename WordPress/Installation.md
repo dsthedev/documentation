@@ -36,7 +36,7 @@ php "c:/wp-cli/wp-cli.phar" %*
 ```
 
 4. **DO NOT DO THIS!** *It will do weird stuff to path variable.  Add it manually instead!* Add c:\wp-cli to your path:
-	5. `setx path "%path%;c:\wp-cli"`
+	5. ~~`setx path "%path%;c:\wp-cli"`~~
 
 You can now use WP-CLI from anywhere in Windows command line.
 

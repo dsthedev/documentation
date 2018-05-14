@@ -7,6 +7,16 @@
 
 - [ ] Search for existing Order / Similar Line Item
 - [ ] If similar line item exists, copy w/ creatives (w/o if new creatives)
+  - [ ] Update date at end of Name
+  - [ ] Remove (copy #) from Name
+  - [ ] Update Start / End times
+  - [ ] Check and change impression count if different
+  - [ ] Check ad positions and update if needed
+  - [ ] Check inventory
+  - [ ] Save
+  - [ ] Upload Creative(s)
+    - [ ] Add Click-through URL
+  - [ ] Double check all fields and make sure status is `Ready` (Resume)
 - [ ] If no order exists, create new
   - [ ] `Advertiser Name - Year`
   - [ ] If no advertiser exists, create new
@@ -30,3 +40,4 @@
 ## Tips
 
 * If order has two line items that are the same, traffic them both right away
+* Some sponsorship ad spots that run all year will get a ticket
