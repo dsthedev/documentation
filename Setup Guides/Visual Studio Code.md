@@ -6,6 +6,8 @@
 
 ## Extensions
 
+**Gist:** [vsc-extensions.sh](https://gist.github.com/dsthedev/43124de9436065086605b33a311bebf6)
+
 ```bash
 code --install-extension albymor.increment-selection
 code --install-extension bradgashler.htmltagwrap
@@ -33,6 +35,8 @@ code --install-extension zhuangtongfa.Material-theme
 - [Prettier](https://prettier.io/docs/en/configuration.html)
 
 ## User Settings
+
+**Gist:** [vsc-user-settings.json](https://gist.github.com/dsthedev/4a8dcf92bc7771498a1950276f12b2a5)
 
 ```json
 {
@@ -81,6 +85,8 @@ code --install-extension zhuangtongfa.Material-theme
 - Open Workspace: `ctrl+l>o` (Custom)
 
 ## Custom Keybindings
+
+**Gist:** [vsc-custom-keybindings.json](https://gist.github.com/dsthedev/d8bb62feac45419662107d8a87f259f4)
 
 ```json
 [
