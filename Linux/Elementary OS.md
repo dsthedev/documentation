@@ -2,27 +2,27 @@
 
 ## Basics
 
-1. Install git with `sudo apt-get install git`
+- Install Eddy with `sudo apt-get install eddy`
+- Install Synergy with Eddy
+- Install VSCode with Eddy
+- Install git with `sudo apt-get install git`
+- [Enable PPA](https://elementaryos.stackexchange.com/questions/7507/how-can-i-add-a-ppa-in-loki) adding with `sudo apt install software-properties-common`
+- Follow [Typora's install](http://support.typora.io/Typora-on-Linux/) for linux installation:
 
-2. [Enable PPA](https://elementaryos.stackexchange.com/questions/7507/how-can-i-add-a-ppa-in-loki) adding with `sudo apt install software-properties-common`
+```bash
+# optional, but recommended
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA300B7755AFCFAE
 
-3. Follow [Typora's install](http://support.typora.io/Typora-on-Linux/) for linux installation:
+# add Typora's repository
+sudo add-apt-repository 'deb https://typora.io ./linux/'
+sudo apt-get update
 
-    1. ```
-        # optional, but recommended
-        sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA300B7755AFCFAE
+# install typora
+sudo apt-get install typora
+```
 
-        # add Typora's repository
-        sudo add-apt-repository 'deb https://typora.io ./linux/'
-        sudo apt-get update
-
-        # install typora
-        sudo apt-get install typora
-        ```
-
-    2. If it [doesn't run](https://github.com/electron/electron/issues/1518), may need to use `sudo apt-get install libgconf-2-4`
-
-4. Clone [Documentation](https://gitlab.com/dsthedev/Documentation) project into `~/Documents`
+- If it [doesn't run](https://github.com/electron/electron/issues/1518), may need to use `sudo apt-get install libgconf-2-4`
+- Clone [Documentation](https://gitlab.com/dsthedev/Documentation) project into `~/Documents`
 
 
 ## Customize
