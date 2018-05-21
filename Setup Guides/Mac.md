@@ -13,11 +13,16 @@ This is for after a clean install of the latest version of macOS (Currently High
 
 ## System Preferences
 
-- u
+### General
+
+- Stuff
+
+---
 
 ## Applications
 
 - Synergy
+- Slack
 
 ---
 
@@ -169,5 +174,6 @@ Because macOS is awesome, system prefernces and most programs can be installed a
 	- [Nate Landau's Mac OSX Bash Profile](https://natelandau.com/my-mac-osx-bash_profile/)
 - Homebrew
 	- [Homebrew Formulae](https://formulae.brew.sh/formula/)
+	- [Papo's macosx app setup list using brew and cask](http://javapapo.blogspot.com/2015/08/my-macosx-app-setup-list-using-brew-and.html)
 - Guides
 	- [The Ultimate Must-Know Guide to Securely Deleting Private Files & Folders from Your Mac Forever](https://mac-how-to.gadgethacks.com/how-to/ultimate-must-know-guide-securely-deleting-private-files-folders-from-your-mac-forever-0145979/)
