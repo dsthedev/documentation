@@ -1,5 +1,17 @@
 # Elementary OS
 
+## OS Install
+
+1. English
+2. Connect to WiFi
+3. Download updates & install 3rd party drivers
+4. Erase disk and install elementary
+5. Set time zone to Eau Claire, WI
+6. English (US) keyboard
+7. Create an admin account (Commander)
+
+After installation and restart, double check for updates.  Sometimes the download updates option fails during installation.
+
 ## Basics
 
 - Install Eddy with `sudo apt-get install eddy`
@@ -24,7 +36,6 @@ sudo apt-get install typora
 - If it [doesn't run](https://github.com/electron/electron/issues/1518), may need to use `sudo apt-get install libgconf-2-4`
 - Clone [Documentation](https://gitlab.com/dsthedev/Documentation) project into `~/Documents`
 
-
 ## Customize
 
 1. Remove Music and Videos from Dock
@@ -43,25 +54,27 @@ sudo apt-get install typora
 
 ## Apps
 
-* Epiphany
-  * General - Don't allow advertisements
-  * Privacy
-    * Tell websites you don't want to be tracked
-    * Don't remember passwords
-* Mail - Add account(s)
-* Calendar - Add account(s)
-
+- Epiphany
+  - General - Don't allow advertisements
+  - Privacy
+    - Tell websites you don't want to be tracked
+    - Don't remember passwords
+- Mail - Add account(s)
+- Calendar - Add account(s)
 
 ## LAMP
 
-* https://www.lifeofgeek.com/install-lamp-elementary-os-loki/
-
+- https://www.lifeofgeek.com/install-lamp-elementary-os-loki/
 
 ## Keyboard Shortcuts
 
-* Switch desktop:`cmd + left / right`
-* Switch desktop alt: `cmd + tab, (+ shift to reverse)`
-* Maximize window: `cmd + up`
-* Active App view: `cmd + down`
-* Resize window to left / right half: `ctrl + cmd + left / right`
-* Move window to another desktop: `cmd + option + left / right`
+- Switch desktop:`cmd + left / right`
+- Switch desktop alt: `cmd + tab, (+ shift to reverse)`
+- Maximize window: `cmd + up`
+- Active App view: `cmd + down`
+- Resize window to left / right half: `ctrl + cmd + left / right`
+- Move window to another desktop: `cmd + option + left / right`
+
+## Troubleshooting
+
+- Can't update OS?  `sudo apt update && sudo apt upgrade`
