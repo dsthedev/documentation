@@ -2,12 +2,17 @@
 
 This is for after a clean install of the latest version of macOS (Currently High Sierra)
 
+**Note:** For now, I'm sticking with the MacOS extended file format instead of APFS.
+
 ---
 
 ## First Steps
 
 - Upgrade to macOS HighSierra if not already installed
 - Update all apps if available
+- Complete Keyboard Setup Assistant if needed
+- If Auto Update Popup shows select "Not Now", it will still notify when updates are available
+- Setup Safari for immediate internet access
 
 ---
 
@@ -19,9 +24,14 @@ This is for after a clean install of the latest version of macOS (Currently High
 
 ---
 
-## Applications
+## Applications to Install
+
+### Required Apps
 
 - Synergy
+
+### Recommended Apps
+
 - Slack
 
 ---
@@ -34,21 +44,23 @@ This is for after a clean install of the latest version of macOS (Currently High
 
 ---
 
-### App Setup (Manual)
+## App Setup (Manual)
 
-#### Finder
+If you'd rather setup applications via the terminal, skip to the next section.
 
-##### General
+### Finder
+
+#### General
 
 - Show these items on the desktop: `none`
 - New Finder windows show: `{User's Home}`
 - Open folders in tabs instead of new windows: `false`
 
-##### Tags
+#### Tags
 
 **@todo** Start using tags, and create a useful "system" to follow.
 
-##### Sidebar
+#### Sidebar
 
 - Show these items in the sidebar:
 	- Favorites: `{User's Home}`
@@ -56,7 +68,7 @@ This is for after a clean install of the latest version of macOS (Currently High
 	- Devices: `{User's Home} {Mac type}, External disks`
 	- Tags: `none`
 
-##### Advanced
+#### Advanced
 
 - Show all filename extensions: `true`
 - Show warning before changing an extension: `false`
@@ -66,11 +78,11 @@ This is for after a clean install of the latest version of macOS (Currently High
 - Keep folders on top when sorting by name: `true`
 - When performing a search: `Search the Current Folder`
 
-#### Safari
+### Safari
 
-##### General
+#### General
 
-- Safari opens with: `A new window`
+- Safari opens with: `A new private window`
 - New windows open with: `Empty Page`
 - New tabs open with: `Empty Page`
 - Homepage: `about:blank`
@@ -81,15 +93,20 @@ This is for after a clean install of the latest version of macOS (Currently High
 - Remove download list items: `Manually`
 - Open "safe" files after downloading: `false`
 
+#### Tabs
+
+- Open pages in tabs instead of windows: `Automatically`
+- `cmd+click` opens a link in new tab: `true`
+- When a new window opens, make it active: `false`
+- Use `cmd+(1-9)` to switch tabs: `true`
+
 ---
 
-## Automated
+## App Setup (Terminal)
 
 Because macOS is awesome, system prefernces and most programs can be installed and configured via the terminal.
 
-### App Setup (Terminal)
-
-#### Finder
+### Finder
 
 - Always show scroll bars: `defaults write NSGlobalDomain AppleShowScrollBars -string "Always"`
 - Expand save & print panels by default:
@@ -109,15 +126,15 @@ Because macOS is awesome, system prefernces and most programs can be installed a
 	- `defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true`
 - Disable warning before emptying the Trash: `defaults write com.apple.finder WarnOnEmptyTrash -bool false`
 
-#### Safari
+### Safari
 
 - Open "safe" files after downloading: `defaults write com.apple.Safari AutoOpenSafeDownloads -bool false`
 
-#### System Preferences
+### System Preferences
 
 - Disable natural scrolling (trackpad only): `defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false`
 
-#### Dock
+### Dock
 
 - Remove all default icons from the Dock:
 	- `defaults delete com.apple.dock persistent-apps`
@@ -127,7 +144,7 @@ Because macOS is awesome, system prefernces and most programs can be installed a
 	- `defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'`
 	- `killall Dock`
 
-#### General
+### General
 
 - Check for software updates daily: `defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1`
 - Change screenshot file type: `defaults write com.apple.screencapture type -string "png"`
