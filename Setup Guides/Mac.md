@@ -8,11 +8,18 @@ This is for after a clean install of the latest version of macOS (Currently High
 
 ## First Steps
 
+After installing a fresh copy of macOS with a master admin account (Commander), follow the options below before creating a standard user account.
+
 - Upgrade to macOS HighSierra if not already installed
 - Update all apps if available
 - Complete Keyboard Setup Assistant if needed
 - If Auto Update Popup shows select "Not Now", it will still notify when updates are available
-- Setup Safari for immediate internet access
+- Setup Safari per instructions below
+- *Optional*: Download, install, and configure Synergy
+
+Now that some sensible defaults have been set for the admin account (should rarely be used), it's time to create a Standard user account and get it setup with some similarly sensible defaults too.  It may seem redundant, but if this is a personal device it's nice to have a familiar environment if you ever have to switch accounts.
+
+- Create the Standard User account in `System Preferences > Users & Groups`
 
 ---
 
@@ -20,7 +27,17 @@ This is for after a clean install of the latest version of macOS (Currently High
 
 ### General
 
-- Stuff
+- Appearance: `Graphite`
+- Use dark menu bar and Dock: `true`
+- Automatically hide and show menu bar: `false`
+
+### Users & Groups
+
+- Login Options:
+	- Display login window as: `Name and password`
+	- Show the Sleep, Restart, and Shutdown buttons: `false`
+	- Show fast user switching menu as `Account Name`
+	- Basically all options are set to `false/off`
 
 ---
 
@@ -80,6 +97,8 @@ If you'd rather setup applications via the terminal, skip to the next section.
 
 ### Safari
 
+For regular usage, especially on a Mac, Safari is actually a really good browser.  The fact that it's not cross platform (obviously) is a bummer, but it has some nice features that make browsing the web slightly more pleasant than other browsers.  Plus performance and OS integration are top notch.
+
 #### General
 
 - Safari opens with: `A new private window`
@@ -99,6 +118,53 @@ If you'd rather setup applications via the terminal, skip to the next section.
 - `cmd+click` opens a link in new tab: `true`
 - When a new window opens, make it active: `false`
 - Use `cmd+(1-9)` to switch tabs: `true`
+
+#### AutoFill / Passwords
+
+- Don't Autofill anything!  Set all to `false`
+
+#### Search
+
+- Search engine: `Google`
+	- I'm considering using DuckDuckGo, just haven't found time
+- Uncheck everything except for favorites in the Smart Search Field.
+
+#### Security
+
+- Check all (warn of fraudulent sites, enable JS, block pop-ups)
+
+#### Privacy
+
+- Prevent cross-site tracking: `true`
+- Ask websites not to track me: `true`
+- Block all cookies: `false`
+
+#### Websites
+
+This appears to be a very useful section to fine tune my browsing experience.
+
+- Reader: Set "When visiting other websites" to `On`
+	- This will automatically add new sites to the auto-reader list
+	- Also make the reader dark by opening an article with reader enabled to access the reader settings for color and font type
+
+#### Extensions
+
+Needs further review:
+
+- Grammarly
+- URL Advisor by Kaspersky
+
+#### Advanced
+
+- Show full website address: `true`
+- Never use font sizes smaller than: `9`
+- Press Tab to highlight each item on a page: `true`
+- Save articles for offline reading automatically: `true`
+- Stop plug-ins to save power: `true`
+- Style sheet: I recommend `normalize.css` [link](https://necolas.github.io/normalize.css/)
+- Default encoding: `UTF-8`
+- Proxies?  Needs further review
+- Show develop menu in menu bar: `true`
 
 ---
 
