@@ -30,6 +30,11 @@ Now that some sensible defaults have been set for the admin account (should rare
 - Appearance: `Graphite`
 - Use dark menu bar and Dock: `true`
 - Automatically hide and show menu bar: `false`
+- Highlight color: `Grayscale 50%`
+- Sidebar icon size: `Small`
+- Show scroll bars: `Always`
+- Click in the scroll bar to: `Jump to the spot thats clicked`
+- Default web browsers: `Safari?`
 
 ### Users & Groups
 
