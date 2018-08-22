@@ -35,6 +35,10 @@ Now that some sensible defaults have been set for the admin account (should rare
 - Show scroll bars: `Always`
 - Click in the scroll bar to: `Jump to the spot thats clicked`
 - Default web browsers: `Safari?`
+- Ask to keep changes when closing documents: `false`
+- Close windows when quitting an app: `true`
+- Recent items: `None`
+- Use LCD font smoothing when available: `true`
 
 ### Users & Groups
 
@@ -43,6 +47,24 @@ Now that some sensible defaults have been set for the admin account (should rare
 	- Show the Sleep, Restart, and Shutdown buttons: `false`
 	- Show fast user switching menu as `Account Name`
 	- Basically all options are set to `false/off`
+
+### Desktop & Screen Saver
+
+- Desktop: `Solid Gray Pro Ultra Dark`
+- Screen Saver: `Message, 20m, Show with clock`
+
+### Dock
+
+- Size: `Smallest`
+- Magnification: `false`
+- Position on screen: `left`
+- Minimize windows using: `Scale effect`
+- Prefer tabs when opening documents: `Always`
+- Double-click a window's title bar to: `false`
+- Minimize windows into application icon: `true`
+- Animate opening applications: `false`
+- Automatically hide and show the Dock: `false`
+- Show indicators for open applications: `true`
 
 ---
 
