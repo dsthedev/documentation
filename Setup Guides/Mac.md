@@ -261,6 +261,17 @@ Because macOS is awesome, system prefernces and most programs can be installed a
 
 ---
 
+## Spotlight Reference
+
+Spotlight search is great, and it has completely changed how I open apps.
+
+- `sp` **S**ystem **P**references
+- `sa` **Sa**fari
+- `vir` **V**irtual**B**ox
+- `vis` **Vis**ual Studio Code
+
+---
+
 ## Terminal Reference
 
 - Securely delete a file:
