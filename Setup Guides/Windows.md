@@ -9,8 +9,10 @@
 ## Configuration
 
 - Clean up desktop, taskbar, start menu, and quick access
+  - Remove all desktop shortcuts & icons
   - Desktop - Right click -> View -> Hide desktop icons
-  - Set a sweet-arse desktop wallpaper
+  - Set a sweet-arse desktop wallpaper (right click -> personalize)
+    - Or at least a dark color such as #222222
   - Taskbar
     - Remove all app shortcuts (Search & Start Menu are preferred)
     - Hide Cortana, People, Task View Button
@@ -40,6 +42,7 @@
   - System
     - Display
       - Enable Night Light at ~50%
+      - Enable schedule (sunset to sunrise)
     - Notifications
       - Disable all except "From apps and other senders", Edge, Security/Maintenance, and user installed apps
     - Storage

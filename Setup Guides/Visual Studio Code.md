@@ -225,3 +225,8 @@ code --install-extension zhuangtongfa.Material-theme
 
 - The git integration is super nice, but the commands and branch management are kind of weird
 - I wonder if I can automate my VSCode configuration with a bash or powershell script?
+
+
+## TODO's
+
+- [ ] Read [10 essential extensions for VS Code](https://medium.com/@fbnlsr/10-essential-extensions-for-vs-code-fdfa17f4f66c).
