@@ -6,6 +6,30 @@ Afterwards, download the Developer Edition and set it up in almost the same way.
 
 If you're using Windows, Firefox is basically the best option as a PDF viewer.  If you're on Linux Mint (Cinnamon) or macOS, their preview apps are better, so there's really no need to download or use the regular Firefox Edition.
 
+## Installation (Developer Edition ONLY)
+
+### Linux (Manual)
+
+1. Download from the [Mozilla website](https://www.mozilla.org/en-US/firefox/developer/)
+2. Extract & rename to `firefox_dev` and `mv` to `/usr/local`
+3. Create this file `~/.local/share/applications/firefox_dev.desktop` and enter this content:
+
+```conf
+[Desktop Entry]
+Name=Firefox Developer 
+GenericName=Firefox Developer Edition
+Exec=/usr/local/firefox_dev/firefox %u
+Terminal=false
+Icon=/usr/local/firefox_dev/browser/chrome/icons/default/default128.png
+Type=Application
+Categories=Application;Network;X-Developer;
+Comment=Firefox Developer Edition Web Browser.
+```
+
+Now Firefox Dev Edition should be available via the Application Screen.
+
+**Note:** If the launcher isn't trusted, change that with this: `chmod +x ~/.local/share/applications/firefox_dev.desktop`
+
 ## Preferences
 
 ### General
