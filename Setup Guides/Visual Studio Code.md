@@ -1,8 +1,47 @@
 # Visual Studio Code
 
-1. [Download](https://code.visualstudio.com/Download) & run installer
-	1. Install on main drive, as performance is important
-	2. Enable "Open with Code" options (2) and add to PATH
+1. [Download VSCode Installer](https://code.visualstudio.com/Download)
+2. Run the installer
+3. `cmd+shift+p` & `Shell Command: Install 'code' command in PATH`
+
+## Settings (JSON)
+
+The most up to date version of my settings are [here]().
+
+```json
+{
+    "editor.fontSize": 12,
+    "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+    "editor.cursorStyle": "line-thin",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.insertSpaces": false,
+    "workbench.startupEditor": "none",
+    "editor.fontLigatures": true,
+    "editor.cursorBlinking": "phase",
+    "terminal.integrated.cursorBlinking": true,
+    "editor.renderWhitespace": "boundary",
+    "window.openFoldersInNewWindow": "on",
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "explorer.sortOrder": "type",
+    "editor.tabSize": 2,
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.fontAliasing": "antialiased",
+    "editor.fontWeight": "200"
+}
+```
+
+## Shortcuts
+
+- `cmd+option+left/right`: Switch tabs l/r
+- `cmd+shift+\`: Find/bounce between end/start brackets
+- `option+z`: Toggle word wrap
+
+---
+
+*IGNORE EVERYTHING BELOW, IT'S ONLY THERE FOR REFERENCE WHILE I REBUILD THIS DOC!*
+
+---
 
 ## Extensions
 
