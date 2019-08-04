@@ -33,32 +33,33 @@ The most up to date version of my settings are [here](https://gist.github.com/ds
 
 ## Shortcuts
 
-| Command | Purpose |
-|---|---|
-| `cmd+shift+\` | Find/bounce between end/start brackets |
-| `cmd+option+left/right` | Switch tabs l/r |
-| `ctrl+cmd+left/right` | Move tab to next/prev window |
-| `cmd+b` | show/hide the sidebar (doesn't work in markdown files) |
-| `option+z` | Toggle word wrap |
-| `alt+shift+up|down` | Duplicate Line |
-| `ctrl+k>s` | Keyboard Shortcut Viewer |
+| Command                 | Purpose                                                |
+| ---:                    | ---                                                    |
+| `cmd+shift+\`           | Find/bounce between end/start brackets                 |
+| `cmd+option+left/right` | Switch tabs l/r                                        |
+| `ctrl+cmd+left/right`   | Move tab to next/prev window                           |
+| `cmd+b`                 | show/hide the sidebar (doesn't work in markdown files) |
+| `option+z`              | Toggle wordwrap                                        |
+| `alt+shift+up|down`     | Duplicate Line                                         |
+| `ctrl+k>s`              | Keyboard Shortcut Viewer                               |
 
 ## Extensions
 
-| Name | URL |
-|---|---|
-| Markdown All in One | `yzhang.markdown-all-in-one` |
-| markdownlint | `davidanson.vscode-markdownlint` |
-| Prettier - Code formatter | `esbenp.prettier-vscode` |
+| Name                      | URL                              |
+| ---:                      | ---                              |
+| Markdown All in One       | `yzhang.markdown-all-in-one`     |
+| markdownlint              | `davidanson.vscode-markdownlint` |
+| Prettier - Code formatter | `esbenp.prettier-vscode`         |
+| PHP DocBlocker            | `neilbrayfield.php-docblocker`   |
+| Transformer               | `dakara.transformer`             |
+| Simple Alignment          | `earshinov.simple-alignment`     |
 
 ## TODO
 
 - Create a bash script that installs all my extensions
 
 ---
-
-*IGNORE EVERYTHING BELOW, IT'S ONLY THERE FOR REFERENCE WHILE I REBUILD THIS DOC!*
-
+## **IGNORE EVERYTHING BELOW, IT'S ONLY THERE FOR REFERENCE WHILE I REBUILD THIS DOC!**
 ---
 
 ## Extensions
@@ -86,10 +87,6 @@ code --install-extension Tyriar.sort-lines
 code --install-extension yzhang.markdown-all-in-one
 code --install-extension zhuangtongfa.Material-theme
 ```
-
-### Extension Resources
-
-- [Prettier](https://prettier.io/docs/en/configuration.html)
 
 ## User Settings
 
@@ -246,35 +243,3 @@ code --install-extension zhuangtongfa.Material-theme
   }
 }
 ```
-
-## First Impressions
-
-- Start screen is nice; start, recent, help, customize, and learn are all useful
-- Built in keyboard shortcut cheat sheet with search is amazing
-- Built in terminal/powershell? Awesome, no need for gitbash anymore
-
-## License
-
-- Between Microsoft Corporation and you
-- Terms apply to software, services, updates; except for exceptions
-- Installation and Use
-  - May use any number of copies, even for corporate
-  - May use for demonstrations
-  - You can make a backup copy of the software
-  - Third Party Programs
-    - Even if they have agreements, the disclaimers and rules of this agreement still apply
-    - This software includes 3rd party components, and for $5 source code can be made available from Microsoft
-  - Extensions
-    - 3rd party extensions available via the marketplace have their own agreements and licensing which Microsoft is not responsible for
-- Data
-  - @todo: finish reading & summarizing license, which should be done before installation usually!
-
-## Thoughts
-
-- The git integration is super nice, but the commands and branch management are kind of weird
-- I wonder if I can automate my VSCode configuration with a bash or powershell script?
-
-
-## TODO's
-
-- [ ] Read [10 essential extensions for VS Code](https://medium.com/@fbnlsr/10-essential-extensions-for-vs-code-fdfa17f4f66c).
