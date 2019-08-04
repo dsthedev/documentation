@@ -63,8 +63,9 @@ Now that some sensible defaults have been set for the admin account (should rare
 - Double-click a window's title bar to: `false`
 - Minimize windows into application icon: `true`
 - Animate opening applications: `false`
-- Automatically hide and show the Dock: `false`
+- Automatically hide and show the Dock: `true`
 - Show indicators for open applications: `true`
+- Show recent applications in Dock: `false`
 
 ---
 
