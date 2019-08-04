@@ -6,7 +6,7 @@
 
 ## Settings (JSON)
 
-The most up to date version of my settings are [here]().
+The most up to date version of my settings are [here](https://gist.github.com/dsthedev/4a8dcf92bc7771498a1950276f12b2a5).
 
 ```json
 {
@@ -33,9 +33,27 @@ The most up to date version of my settings are [here]().
 
 ## Shortcuts
 
-- `cmd+option+left/right`: Switch tabs l/r
-- `cmd+shift+\`: Find/bounce between end/start brackets
-- `option+z`: Toggle word wrap
+| Command | Purpose |
+|---|---|
+| `cmd+shift+\` | Find/bounce between end/start brackets |
+| `cmd+option+left/right` | Switch tabs l/r |
+| `ctrl+cmd+left/right` | Move tab to next/prev window |
+| `cmd+b` | show/hide the sidebar (doesn't work in markdown files) |
+| `option+z` | Toggle word wrap |
+| `alt+shift+up|down` | Duplicate Line |
+| `ctrl+k>s` | Keyboard Shortcut Viewer |
+
+## Extensions
+
+| Name | URL |
+|---|---|
+| Markdown All in One | `yzhang.markdown-all-in-one` |
+| markdownlint | `davidanson.vscode-markdownlint` |
+| Prettier - Code formatter | `esbenp.prettier-vscode` |
+
+## TODO
+
+- Create a bash script that installs all my extensions
 
 ---
 
@@ -113,15 +131,6 @@ code --install-extension zhuangtongfa.Material-theme
   "files.autoSave": "off"
 }
 ```
-
-## Keyboard Shortcuts
-
-- Extension marketplace: `ctrl+shift+x`
-- Settings: `ctrl+,`
-- Terminal/Powershell: `ctrl+`\`
-- Duplicate Line: `alt+shift+up|down`
-- Keyboard Shortcut Viewer: `ctrl+k>s`
-- Open Workspace: `ctrl+l>o` (Custom)
 
 ## Custom Keybindings
 
