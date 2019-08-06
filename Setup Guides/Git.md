@@ -1,12 +1,15 @@
 # Setting Up Git
 
-## For Windows
+1. [Download Git Installer](https://git-scm.com/downloads)
+2. Run the installer
 
-* Installation Options
-  * Don't create a start menu folder
-* Configuration
-  * \$ git config --global user.name "Wade Wilson"
-  * \$ git config --global user.email wade.wilson@murvil.com
-  * Options
-    * Looks - Set theme to VGA & medium transparency
-    * Text - Source Code Pro Light, 10pt, Partial smoothing
+## Windows
+
+- Installation Options
+  - Don't create a start menu folder
+
+## Configuration
+
+- `git config --global user.name "{First Name} {Last Name}"`
+- `git config --global user.email {email.address}@{domain.com}`
+- Grab the git bash helper stuff from my gist [here](https://gist.github.com/dsthedev/f1a54a3d2f9c245efe842b78b2fe1293)
