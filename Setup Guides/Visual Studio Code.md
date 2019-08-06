@@ -42,6 +42,7 @@ The most up to date version of my settings are [here](https://gist.github.com/ds
 | `option+z`              | Toggle wordwrap                                        |
 | `alt+shift+up|down`     | Duplicate Line                                         |
 | `ctrl+k>s`              | Keyboard Shortcut Viewer                               |
+| `ctrl+g                 | Jump to line                                           |
 
 ## Extensions
 
@@ -53,6 +54,7 @@ The most up to date version of my settings are [here](https://gist.github.com/ds
 | PHP DocBlocker            | `neilbrayfield.php-docblocker`   |
 | Transformer               | `dakara.transformer`             |
 | Simple Alignment          | `earshinov.simple-alignment`     |
+| One Dark Pro              | `zhuangtongfa.material-theme`    |
 
 ## TODO
 
