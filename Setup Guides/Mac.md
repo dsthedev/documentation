@@ -40,8 +40,9 @@ It's important to follow these first steps before doing anything else on the com
 
 ### General
 
-- Connect to Franks Storage
+- Connect to any local network server storage
   - Open Finder and press `cmd+k` or use the Menu item `Go > Connect to Server`
+- Download and install the [FiraCode](https://github.com/tonsky/FiraCode) font
 
 ### Configuration
 
