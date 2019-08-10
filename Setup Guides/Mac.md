@@ -54,7 +54,7 @@ It's important to follow these first steps before doing anything else on the com
     3. Position on screen: `left`
     4. Minimize windows using: `Scale effect`
     5. Prefer tabs when opening documents: `Always`
-    6. Double-click a window's title bar to: `false`
+    6. Double-click a window's title bar to: `zoom`
     7. Minimize windows into application icon: `true`
     8. Animate opening applications: `false`
     9. Automatically hide and show the Dock: `true`

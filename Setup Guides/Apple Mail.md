@@ -83,7 +83,7 @@ Leave these at the default settings.
 - Add any custom signatures here for each account and:
   - Make sure to select each account and apply the right signature for each
   - Always match my default message font: `true`
-- Place signature above quoted text: `true
+- Place signature above quoted text: `true`
 
 ### Rules
 
