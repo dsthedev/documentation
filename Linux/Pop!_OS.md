@@ -1,19 +1,90 @@
-# Pop!_OS
+# Pop!\_OS
 
-Pop!_OS is relatively new and promising Linux distro made by [System76](https://system76.com).
+Pop!\_OS is one of the best Linux alternatives to Windoze and macOS. Big thanks to [System76](https://system76.com) for creating such an easy to use and flexible operating system!
+
+This document currently uses version `19.10`.
 
 ## Installation
 
-1. Download [here](https://system76.com/pop)
-2. Decide on going VBox or Live
-   1. I recommend live if you have the hardware
-3. Follow the install instructions [here](https://pop.system76.com/docs/install-pop-os/)
+1. Download the iso [here](https://system76.com/pop)
+2. Follow the install instructions [here](https://pop.system76.com/docs/install-pop-os/)
 
-### Post Install Tips
+### Post Install Recommendations
 
-1. Install [Snap](https://docs.snapcraft.io/t/installing-snap-on-pop-os/11706) for an alternative app store / installer.
-  - Be sure to install the Snap Store too: `sudo snap install snap-store`
-2. Install exFat format utilities with: `sudo apt-get install exfat-fuse exfat-utils`
+#### Apt Apps
+
+```bash
+sudo apt update
+
+# These utilities are needed to read & write to exFat drives.
+sudo apt install exfat-fuse exfat-utils
+
+# Gnome Tweaks for better customization
+sudo apt install gnome-tweaks -y
+
+# Spotify for music
+sudo apt install spotify-client
+
+# Visual Studio Code
+sudo apt install software-properties-common apt-transport-https wget -y # Install dependencies
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add - # Import Microsoft's GPG key
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" # Enable VSCode repository
+sudo apt update
+sudo apt install code
+
+# Firefox Developer Edition (DOESN'T WORK)
+# sudo apt install ubuntu-make -y
+# umake web firefox-dev --lang en-US
+
+# Firefox Developer Edition
+# wget -P ~/Downloads/ https://ftp.mozilla.org/pub/firefox/releases/71.0b4/linux-x86_64/en-US/firefox-71.0b4.tar.bz2 # Add -q to hide progress, downloads regular, not Dev Edition!
+# For now, it seems the actual developer edition HAS to be downloaded manually for linux...
+# https://www.mozilla.org/en-US/firefox/developer/
+sudo tar -xvf ~/Downloads/firefox-*.tar.bz2 -C /usr/local/
+sudo mv /usr/local/firefox/ /usr/local/firefox-dev/
+
+# OBS for screen recording / streaming
+sudo apt-get install ffmpeg
+sudo add-apt-repository ppa:obsproject/obs-studio
+sudo apt-get update
+sudo apt-get install obs-studio
+```
+
+If an app doesn't create a desktop link, it will need to be manually created, example:
+
+```conf
+# ~/.local/share/applications/firefox-dev.desktop
+[Desktop Entry]
+Name=Firefox Developer
+GenericName=Firefox Developer Edition
+Exec=/usr/local/firefox-dev/firefox %u
+Terminal=false
+Icon=/usr/local/firefox-dev/browser/chrome/icons/default/default128.png
+Type=Application
+Categories=Application;Network;X-Developer;
+Comment=Firefox Developer Edition Web Browser.
+```
+
+#### Snapcraft
+
+[Snapcraft](https://snapcraft.io/) is an alternative app store and package manager. It has certain apps that I use regularly that are not on Pop!\_Shop.
+
+```bash
+sudo apt update
+sudo apt install snapd
+sudo snap install snap-store
+```
+
+**Note:** The Snap Store may not be available until the machine has been restarted.
+
+##### Snap Apps
+
+These apps can be installed via the Snap Store, but doing it with the command line is faster and easier.
+
+```bash
+sudo snap install opera
+sudo snap install opera-developer --edge
+```
 
 ## Settings
 
@@ -26,7 +97,7 @@ Additionally, if any individual settings are omitted, it's because they haven't 
 - Background: `Something Dark`
 - Lock Screen: `Something Dark`
 - Dark Mode: `true`
-- Slim Mode: `true`
+- ~~Slim Mode: `true`~~ Removed in 19.10?!
 
 ### Online Accounts
 
@@ -47,7 +118,7 @@ Additionally, if any individual settings are omitted, it's because they haven't 
 
 - Displays
   - Night Light: `true`
-    - Manual from 8pm to 6am
+    - Manual from 7pm to 7am
     - Color Temperature: `33%`
 
 ## Gnome Tweaks
@@ -77,38 +148,9 @@ Additionally, if any individual settings are omitted, it's because they haven't 
 - Display Handling
   - TODO: Find a way to have separate workspace per monitor like macOS does
 
-## Apps
-
-### Install via Pop!_Shop
-
-- Gnome Tweaks
-- Spotify
-
-### Install via Snap
-
-**Note:** The shop can be buggy, install these via terminal for the smoothest experience.
-
-- VSCode
-- Opera
-- Opera Developer Edition
-
-### Install Manually
-
-- Firefox Developer Edition
-  - `sudo apt install ubuntu-make`
-  - `umake web firefox-dev --lang en-US`
-- OBS
-  - `sudo apt-get install ffmpeg`
-  - `sudo add-apt-repository ppa:obsproject/obs-studio`
-  - `sudo apt-get update`
-  - `sudo apt-get install obs-studio`
-
 ## Resources
 
-- [Pop!_OS Docs](https://pop.system76.com/docs/)
+- [Pop!\_OS Docs](https://pop.system76.com/docs/)
 - [Github Repo](https://github.com/pop-os/pop)
 - [Snap](https://docs.snapcraft.io/t/installing-snap-on-pop-os/11706)
-- Manual Install Guides:
-  - [Firefox Dev Edition on Linux](https://www.linuxbabe.com/browser/install-firefox-developer-edition-ubuntu-16-04-linux-mint-18)
-  - [VSCode on Linux](https://code.visualstudio.com/docs/setup/linux)
-  - [OBS on Linux](https://obsproject.com/wiki/install-instructions#ubuntu-installation)
+- [Firefox Desktop Downloads](https://www.mozilla.org/en-US/firefox/channel/desktop/)
