@@ -44,10 +44,10 @@ sudo tar -xvf ~/Downloads/firefox-*.tar.bz2 -C /usr/local/
 sudo mv /usr/local/firefox/ /usr/local/firefox-dev/
 
 # OBS for screen recording / streaming
-sudo apt-get install ffmpeg -y
+sudo apt install ffmpeg -y
 sudo add-apt-repository ppa:obsproject/obs-studio
-sudo apt-get update
-sudo apt-get install obs-studio
+sudo apt update
+sudo apt install obs-studio -y
 ```
 
 If an app doesn't create a desktop link, it will need to be manually created, example:
