@@ -44,7 +44,7 @@ sudo tar -xvf ~/Downloads/firefox-*.tar.bz2 -C /usr/local/
 sudo mv /usr/local/firefox/ /usr/local/firefox-dev/
 
 # OBS for screen recording / streaming
-sudo apt-get install ffmpeg
+sudo apt-get install ffmpeg -y
 sudo add-apt-repository ppa:obsproject/obs-studio
 sudo apt-get update
 sudo apt-get install obs-studio
