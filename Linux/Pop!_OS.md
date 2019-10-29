@@ -48,6 +48,20 @@ sudo apt install ffmpeg -y
 sudo add-apt-repository ppa:obsproject/obs-studio
 sudo apt update
 sudo apt install obs-studio -y
+
+# NVM / Node / npm
+(cd ~/Downloads && curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash)
+nvm install --lts
+
+# Virtual Box
+sudo apt install virtualbox -y
+
+# Vagrant
+sudo apt install vagrant
+
+# Composer
+sudo apt install curl php-cli php-mbstring git unzip # Dependencies
+(cd ~ && curl -sS https://getcomposer.org/installer -o composer-setup.php)
 ```
 
 If an app doesn't create a desktop link, it will need to be manually created, example:
