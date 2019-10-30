@@ -51,6 +51,13 @@ sudo tar -xvf ~/Downloads/firefox-*.tar.bz2 -C /usr/local/
 sudo mv /usr/local/firefox/ /usr/local/firefox-dev/
 (cd ~/.local/share/applications/ && curl https://gist.githubusercontent.com/dsthedev/0bba503757a797175184e330e115276f/raw/firefox-dev.desktop --output firefox-dev.desktop --silent)
 
+# Opera (and Developer Edition)
+wget -qO- https://deb.opera.com/archive.key | sudo apt-key add -
+sudo add-apt-repository "deb [arch=i386,amd64] https://deb.opera.com/opera-stable/ stable non-free"
+sudo apt install opera-stable -y
+sudo add-apt-repository "deb [arch=i386,amd64] https://deb.opera.com/opera-developer/ stable non-free"
+sudo apt install opera-developer -y
+
 # OBS for screen recording / streaming
 sudo apt install ffmpeg -y
 sudo add-apt-repository ppa:obsproject/obs-studio
