@@ -70,6 +70,12 @@ sudo apt install vagrant
 # Composer
 sudo apt install curl php-cli php-mbstring git unzip -y # Dependencies
 (cd ~ && curl -sS https://getcomposer.org/installer -o composer-setup.php && sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer)
+
+# Typora
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA300B7755AFCFAE
+sudo add-apt-repository 'deb https://typora.io ./linux/'
+sudo apt update
+sudo apt install typora
 ```
 
 If an app doesn't create a desktop link, it will need to be manually created, example:
