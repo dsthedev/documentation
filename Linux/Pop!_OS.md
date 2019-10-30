@@ -4,6 +4,13 @@ Pop!\_OS is one of the best Linux alternatives to Windoze and macOS. Big thanks 
 
 This document currently uses version `19.10`.
 
+- [Installation](#installation)
+- [System Preferences](#system-preferences)
+- [Gnome Tweaks](#gnome-tweaks)
+- [Resources](#resources)
+
+---
+
 ## Installation
 
 1. Download the iso [here](https://system76.com/pop)
@@ -11,7 +18,7 @@ This document currently uses version `19.10`.
 
 ### Post Install Recommendations
 
-#### Apt Apps
+#### Applications
 
 ```bash
 sudo apt update
@@ -42,6 +49,7 @@ sudo apt install code
 # https://www.mozilla.org/en-US/firefox/developer/
 sudo tar -xvf ~/Downloads/firefox-*.tar.bz2 -C /usr/local/
 sudo mv /usr/local/firefox/ /usr/local/firefox-dev/
+(cd ~/.local/share/applications/ && curl https://gist.githubusercontent.com/dsthedev/0bba503757a797175184e330e115276f/raw/firefox-dev.desktop --output firefox-dev.desktop --silent)
 
 # OBS for screen recording / streaming
 sudo apt install ffmpeg -y
@@ -60,7 +68,7 @@ sudo apt install virtualbox -y
 sudo apt install vagrant
 
 # Composer
-sudo apt install curl php-cli php-mbstring git unzip # Dependencies
+sudo apt install curl php-cli php-mbstring git unzip -y # Dependencies
 (cd ~ && curl -sS https://getcomposer.org/installer -o composer-setup.php && sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer)
 ```
 
@@ -100,7 +108,9 @@ sudo snap install opera
 sudo snap install opera-developer --edge
 ```
 
-## Settings
+---
+
+## System Preferences
 
 Any sections omitted are just left with the default settings.
 
@@ -135,7 +145,11 @@ Additionally, if any individual settings are omitted, it's because they haven't 
     - Manual from 7pm to 7am
     - Color Temperature: `33%`
 
+---
+
 ## Gnome Tweaks
+
+The default settings (system preferences) are fairly limited; Gnome Tweaks adds some useful options.
 
 ### Top Bar
 
@@ -162,9 +176,15 @@ Additionally, if any individual settings are omitted, it's because they haven't 
 - Display Handling
   - TODO: Find a way to have separate workspace per monitor like macOS does
 
+---
+
 ## Resources
 
 - [Pop!\_OS Docs](https://pop.system76.com/docs/)
 - [Github Repo](https://github.com/pop-os/pop)
 - [Snap](https://docs.snapcraft.io/t/installing-snap-on-pop-os/11706)
 - [Firefox Desktop Downloads](https://www.mozilla.org/en-US/firefox/channel/desktop/)
+
+## TODO
+
+- Create a bash install script to install additional applications and configure system settings.

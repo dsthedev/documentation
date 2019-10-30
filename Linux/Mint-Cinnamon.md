@@ -6,9 +6,9 @@ Version 18.3 'Sylvia'
 ## Installation
 
 - [ ] [Download ISO Image](https://www.linuxmint.com/mirrors.php)
-    - Pick a stable and trusted source, I prefer [Harvard's](http://mirrors.seas.harvard.edu/linuxmint/)
+  - Pick a stable and trusted source, I prefer [Harvard's](http://mirrors.seas.harvard.edu/linuxmint/)
 - [ ] [Verify Image Integrity](https://linuxmint-installation-guide.readthedocs.io/en/latest/verify.html#download-the-sha256-sums-provided-by-linux-mint)
-    - `sha256sum -b yourfile.iso`
+  - `sha256sum -b yourfile.iso`
 - [ ] Proceed to [First Steps](#first-steps) section below
 
 ### Install From USB
@@ -19,7 +19,7 @@ Install (as superuser)
 - Keyboard layout: `English (US)`
 - Install third-party software for graphics, wi-fi, etc: `true`
 - Erase disk and install Linux Mint
-- Where are you?  Enter city/state
+- Where are you? Enter city/state
 - Name: `SuperUser`
 - Computer Name: PC name without user name (`OptiPlex-3020M-01`) plus a numerical suffix
 - Username: `superuser`
@@ -30,17 +30,17 @@ Install (as superuser)
 Do the following as the SuperUser / Admin first.
 
 - [ ] Create notes on setup / configuration of system
-    - Use Xed (Change to Dark Theme)
+  - Use Xed (Change to Dark Theme)
 - [ ] Connect to Wi-Fi / Ethernet
 - [ ] Lightly go through each entry on the "Welcome Screen"
 - [ ] Update Drivers
-    - Don't switch to proprietary drivers if the device is running fine!
+  - Don't switch to proprietary drivers if the device is running fine!
 - [ ] Install multimedia codecs if the device is going to be used for multimedia at all
 - [ ] Login or sign up for the official forums
 - [ ] Install / Remove Languages
-    - I prefer to remove any unused languages
+  - I prefer to remove any unused languages
 - [ ] Setup a system snapshot [Intructions](https://linuxmint-installation-guide.readthedocs.io/en/latest/timeshift.html#system-snapshots)
-    - I prefer a 1 monthly, 4 weekly, & 7 dailys
+  - I prefer a 1 monthly, 4 weekly, & 7 dailys
 - [ ] Briefly review the [Troubleshooting Guide](https://linuxmint-troubleshooting-guide.readthedocs.io/en/latest/)
 - [ ] Download and review the [User Guide](https://www.linuxmint.com/documentation/user-guide/)
 - [ ] Consider getting involved in the Linux Mint community, as well as donating
@@ -51,11 +51,11 @@ Before customizing anything, add a Standard user for the person who will be usin
 ### System Settings
 
 - Appearance
-    - Backgrounds - Set a cool looking dark background
-    - Effects - Disable all effects
-    - Font Selection - Download `Source Sans/Code/Serif Pro` fonts and apply appropriately
-    - Themes - Dark everything
-        - Settings - Enable all
+  - Backgrounds - Set a cool looking dark background
+  - Effects - Disable all effects
+  - Font Selection - Download `Source Sans/Code/Serif Pro` fonts and apply appropriately
+  - Themes - Dark everything
+    - Settings - Enable all
 - Preferences
   - Accessibility
     - Desktop Zoom: `Enable`
@@ -127,13 +127,7 @@ Before customizing anything, add a Standard user for the person who will be usin
 
 A list of Apps I recommend installing.
 
-- Sublime Text 3
-    - If it's outdated, try this: ```bash
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-sudo apt-get install apt-transport-https
-echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-sudo apt-get update
-sudo apt-get install sublime-text```
+- Sublime Text 3 - If it's outdated, try this: `bash wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add - sudo apt-get install apt-transport-https echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list sudo apt-get update sudo apt-get install sublime-text`
 - Spotify
 - Steam
 - Chromium Browser
@@ -155,21 +149,20 @@ A list of Applets I recommend downloading and using.
 ### Firefox
 
 - Downloads
-    - Always ask where to save files
+  - Always ask where to save files
 - Default Search Engine
-    - DuckDuckGo
+  - DuckDuckGo
 - Forms & Passwords
-    - Set a short master password
+  - Set a short master password
 - History
-    - Use custom settings:
-        - Keep cookies until Firefox is closed
-        - Clear history when Firefox closes
+  - Use custom settings:
+    - Keep cookies until Firefox is closed
+    - Clear history when Firefox closes
 - Address Bar
-    - Disable history and open tabs
+  - Disable history and open tabs
 - Tracking Protection
-    - Always on
-    - Always send a "Do Not Track" signal
-
+  - Always on
+  - Always send a "Do Not Track" signal
 
 ## Tips
 
