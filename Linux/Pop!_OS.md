@@ -157,30 +157,24 @@ Additionally, if any individual settings are omitted, it's because they haven't 
 
 The default settings (system preferences) are fairly limited; Gnome Tweaks adds some useful options.
 
-### Top Bar
+```bash
+# gnome-tweaks -v
 
-- Battery Percentage: `true`
-- Clock:
-  - Weekday: `true`
-  - Date: `true`
-  - Seconds: `true`
-- Calendar:
-  - Week Numbers: `true`
+## Top Bar:
+gsettings set org.gnome.desktop.interface show-battery-percentage true
+gsettings set org.gnome.desktop.interface clock-show-weekday true
+gsettings set org.gnome.desktop.interface clock-show-date true
+gsettings set org.gnome.desktop.interface clock-show-seconds true
+gsettings set org.gnome.desktop.calendar show-weekdate true
 
-### Window Titlebars
+## Window Titlebars
+gsettings set org.gnome.desktop.wm.preferences button-layout "appmenu:minimize,maximize,close"
 
-- Titlebar Buttons
-  - Maximize: `true`
-  - Minimize: `true`
-
-### Windows
-
-- Center New Windows: `true`
-
-### Workspaces
-
-- Display Handling
-  - TODO: Find a way to have separate workspace per monitor like macOS does
+## Windows
+gsettings set org.gnome.mutter center-new-windows true
+gsettings set org.gnome.mutter dynamic-workspaces false
+gsettings set org.gnome.mutter workspaces-only-on-primary true
+```
 
 ---
 
