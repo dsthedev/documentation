@@ -172,7 +172,7 @@ gsettings set org.gnome.desktop.wm.preferences button-layout "appmenu:minimize,m
 
 ## Windows
 gsettings set org.gnome.mutter center-new-windows true
-gsettings set org.gnome.mutter dynamic-workspaces false
+gsettings set org.gnome.mutter dynamic-workspaces true
 gsettings set org.gnome.mutter workspaces-only-on-primary true
 ```
 
