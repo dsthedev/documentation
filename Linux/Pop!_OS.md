@@ -41,15 +41,9 @@ sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/v
 sudo apt update
 sudo apt install code
 
-# Firefox Developer Edition (DOESN'T WORK)
-# sudo apt install ubuntu-make -y
-# umake web firefox-dev --lang en-US
-
 # Firefox Developer Edition
-# wget -P ~/Downloads/ https://ftp.mozilla.org/pub/firefox/releases/71.0b4/linux-x86_64/en-US/firefox-71.0b4.tar.bz2 # Add -q to hide progress, downloads regular, not Dev Edition!
-# For now, it seems the actual developer edition HAS to be downloaded manually for linux...
-# https://www.mozilla.org/en-US/firefox/developer/
-sudo tar -xvf ~/Downloads/firefox-*.tar.bz2 -C /usr/local/
+(cd ~/Downloads && wget -O firefox-developer-edition-latest.tar.bz2 https://ftp.mozilla.org/pub/devedition/releases/71.0b5/linux-x86_64/en-US/firefox-71.0b5.tar.bz2)
+sudo tar -xvf ~/Downloads/firefox-developer-edition-latest.tar.bz2 -C /usr/local/
 sudo mv /usr/local/firefox/ /usr/local/firefox-dev/
 (cd ~/.local/share/applications/ && curl https://gist.githubusercontent.com/dsthedev/0bba503757a797175184e330e115276f/raw/firefox-dev.desktop --output firefox-dev.desktop --silent)
 
