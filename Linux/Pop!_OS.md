@@ -4,10 +4,12 @@ Pop!\_OS is one of the best Linux alternatives to Windoze and macOS. Big thanks 
 
 This document currently uses version `19.10`.
 
+- **Contents:**
 - [Installation](#installation)
 - [System Preferences](#system-preferences)
 - [Gnome Tweaks](#gnome-tweaks)
 - [Resources](#resources)
+- [TODO](#todo)
 
 ---
 
@@ -74,6 +76,10 @@ sudo apt install virtualbox -y
 # Vagrant
 sudo apt install vagrant
 
+# Local by Flywheel (MAMP Alternative for WordPress)
+(cd ~/Downloads && wget -O local-by-flywheel-latest.deb https://local-by-flywheel-flywheel.netdna-ssl.com/latest/linux/deb)
+com.github.donadigo.eddy ~/Downloads/local-by-flywheel-latest.deb
+
 # Composer
 sudo apt install curl php-cli php-mbstring git unzip -y # Dependencies
 (cd ~ && curl -sS https://getcomposer.org/installer -o composer-setup.php && sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer)
@@ -98,27 +104,6 @@ Icon=/usr/local/firefox-dev/browser/chrome/icons/default/default128.png
 Type=Application
 Categories=Application;Network;X-Developer;
 Comment=Firefox Developer Edition Web Browser.
-```
-
-#### Snapcraft
-
-[Snapcraft](https://snapcraft.io/) is an alternative app store and package manager. It has certain apps that I use regularly that are not on Pop!\_Shop.
-
-```bash
-sudo apt update
-sudo apt install snapd
-sudo snap install snap-store
-```
-
-**Note:** The Snap Store may not be available until the machine has been restarted.
-
-##### Snap Apps
-
-These apps can be installed via the Snap Store, but doing it with the command line is faster and easier.
-
-```bash
-sudo snap install opera
-sudo snap install opera-developer --edge
 ```
 
 ---
