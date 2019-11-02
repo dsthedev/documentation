@@ -37,6 +37,9 @@ sudo apt install gnome-tweaks -y
 # Spotify for music
 sudo apt install spotify-client
 
+# Needed to use Netflix in Firefox
+sudo apt install libavcodec-extra
+
 # Visual Studio Code
 sudo apt install software-properties-common apt-transport-https wget -y # Install dependencies
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add - # Import Microsoft's GPG key
