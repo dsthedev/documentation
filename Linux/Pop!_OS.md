@@ -25,6 +25,9 @@ This document currently uses version `19.10`.
 ```bash
 sudo apt update
 
+# Neofetch is a handy sysinfo CLI tool
+sudo apt install neofetch
+
 # These utilities are needed to read & write to exFat drives.
 sudo apt install exfat-fuse exfat-utils
 
