@@ -48,8 +48,9 @@ sudo apt update
 sudo apt install code
 
 # Firefox Developer Edition
-(cd ~/Downloads && wget -O firefox-developer-edition-latest.tar.bz2 https://ftp.mozilla.org/pub/devedition/releases/71.0b5/linux-x86_64/en-US/firefox-71.0b5.tar.bz2)
+(cd ~/Downloads && wget -O firefox-developer-edition-latest.tar.bz2 https://ftp.mozilla.org/pub/devedition/releases/71.0b11/linux-x86_64/en-US/firefox-71.0b11.tar.bz2)
 sudo tar -xvf ~/Downloads/firefox-developer-edition-latest.tar.bz2 -C /usr/local/
+sudo rm -rf /usr/local/firefox-dev
 sudo mv /usr/local/firefox/ /usr/local/firefox-dev/
 (cd ~/.local/share/applications/ && curl https://gist.githubusercontent.com/dsthedev/0bba503757a797175184e330e115276f/raw/firefox-dev.desktop --output firefox-dev.desktop --silent)
 
