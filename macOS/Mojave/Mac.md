@@ -7,13 +7,14 @@
 
 ### Disk Utility
 
-- Format: `APFS`
 - Name: `DSTD-MBP13-E2015-DS`
   - **DSTD**: dsthedev
   - **MBP**: MacBook Pro
   - **13**: Screen size
   - **E2015**: Early 2015
   - **DS**: Darren Sopiarz
+- Format: `APFS`
+- Scheme: `GUID Partition Map`
 
 ### New User Info
 
@@ -48,7 +49,9 @@ It's important to follow these first steps before doing anything else on the com
 
 #### Dock
 
- 1. Remove *everything* from the dock
+Set dock to static mode (only show used apps) `defaults write com.apple.dock static-only -bool true; killall Dock`
+
+ 1. Remove *everything* from the docks
  2. Edit dock preferences:
     1. Size: `smallest`
     2. Magnification: `false`
