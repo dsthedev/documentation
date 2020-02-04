@@ -1,8 +1,23 @@
 # Visual Studio Code
 
+## Installation
+
+### Windows / Mac Install
+
 1. [Download VSCode Installer](https://code.visualstudio.com/Download)
 2. Run the installer
 3. `cmd+shift+p` & `Shell Command: Install 'code' command in PATH`
+
+### Linux / Pop!_OS 19.10
+
+```bash
+sudo apt install software-properties-common apt-transport-https wget -y # Install dependencies
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add - # Import Microsoft's GPG key
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" # Enable VSCode repository
+sudo apt update
+sudo apt install code
+## Install VSCode extensions
+```
 
 ## Settings (JSON)
 
