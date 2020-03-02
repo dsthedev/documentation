@@ -69,6 +69,7 @@ sudo apt install spotify-client -y
 sudo apt install libavcodec-extra -y
 
 # Firefox Developer Edition for web development -- Sign in for sync on first launch!
+# THEME: https://addons.mozilla.org/en-US/firefox/addon/animated-blue-plexus/?src=search
 (cd ~/Downloads && wget -O firefox-developer-edition-latest.tar.bz2 https://ftp.mozilla.org/pub/devedition/releases/73.0b9/linux-x86_64/en-US/firefox-73.0b9.tar.bz2)
 sudo tar -xvf ~/Downloads/firefox-developer-edition-latest.tar.bz2 -C /usr/local/
 sudo rm -rf /usr/local/firefox-dev
