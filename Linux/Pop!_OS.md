@@ -39,7 +39,14 @@ cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc;
 
 # Set global git info
 git config --global user.name "{USER}"
-git config --global user.email "{USER}@{DOMAIN}"
+git config --global user.email "{USER}@{DOMAIN}" # Remember to use githubs private email settings!
+
+# Map a few folders from a backed up drive location to the home folder via symlinks (must be rm -R'd first!)
+sudo ln -s /media/{username}/{drive}/documents ~/Documents
+sudo ln -s /media/{username}/{drive}/downloads ~/Downloads
+sudo ln -s /media/{username}/{drive}/audio ~/Music
+sudo ln -s /media/{username}/{drive}/images ~/Pictures
+sudo ln -s /media/{username}/{drive}/videos ~/Videos
 
 # Install fonts
 (cd ~/Downloads && wget 'https://www.fontsquirrel.com/fonts/download/victor-mono' && wget 'https://www.fontsquirrel.com/fonts/download/source-serif-pro' && wget 'https://www.fontsquirrel.com/fonts/download/source-sans-pro' && wget 'https://www.fontsquirrel.com/fonts/download/source-code-pro')
@@ -142,6 +149,7 @@ sudo apt install typora
 
 # Katoolin for all Kali Linux hacking tools (Steps 1,2, & 4)
 (cd ~/Downloads && sudo apt install python git && sudo add-apt-repository universe && git clone https://github.com/LionSec/katoolin.git && sudo cp katoolin/katoolin.py /usr/bin/katoolin && sudo chmod +x /usr/bin/katoolin && sudo katoolin)
+
 ```
 
 If an app doesn't create a desktop link, it will need to be manually created, example:
