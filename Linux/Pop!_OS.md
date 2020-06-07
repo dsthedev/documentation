@@ -1,8 +1,8 @@
 # Pop!\_OS
 
-Pop!\_OS is one of the best Linux alternatives to Windoze and macOS. Big thanks to [System76](https://system76.com) for creating such an easy to use and flexible operating system!
+**Pop!_OS 20.04 LTS**
 
-This document currently uses version `19.10`.
+In my opinion, Pop!\_OS is easily the best alternative to Microsoft's Windows and Apple's macOS operating systems.  I have a ton of respect and admiration for the folks at [System76](https://system76.com) for creating such an easy to use and flexible operating system!
 
 - **Contents:**
 - [Installation](#installation)
@@ -22,8 +22,10 @@ This document currently uses version `19.10`.
 
 #### Applications
 
+Before running the commands below and setting up the rest of the system, I recommend following my [Firefox Browser Setup Guide](https://github.com/dsthedev/documentation/blob/master/Setup%20Guides/Firefox.md) to have a well tuned browser ready for any immediate R&D.
+
 ```bash
-sudo apt update
+sudo apt update -y
 
 # Neofetch is a handy sysinfo CLI tool
 sudo apt install neofetch
@@ -48,7 +50,7 @@ sudo apt update
 sudo apt install code
 
 # Firefox Developer Edition
-(cd ~/Downloads && wget -O firefox-developer-edition-latest.tar.bz2 https://ftp.mozilla.org/pub/devedition/releases/71.0b11/linux-x86_64/en-US/firefox-71.0b11.tar.bz2)
+(cd ~/Downloads && wget -O firefox-developer-edition-latest.tar.bz2 https://ftp.mozilla.org/pub/devedition/releases/78.0b3/linux-x86_64/en-US/firefox-78.0b3.tar.bz2)
 sudo tar -xvf ~/Downloads/firefox-developer-edition-latest.tar.bz2 -C /usr/local/
 sudo rm -rf /usr/local/firefox-dev
 sudo mv /usr/local/firefox/ /usr/local/firefox-dev/

@@ -1,17 +1,30 @@
-# Firefox
+# Firefox Browser
+
+Version: **77.0.1 (64-bit)**
 
 First things first, go through the preferences and configure all settings properly to protect and serve the user.
 
 Afterwards, download the Developer Edition and set it up in almost the same way.  Differences will be marked below.  Even if you're not doing web development, the tools for inspecting a website's source code are amazing and useful in general.
 
-If you're using Windows, Firefox is basically the best option as a PDF viewer.  If you're on Linux Mint (Cinnamon) or macOS, their preview apps are better, so there's really no need to download or use the regular Firefox Edition.
+If you're using Windows, Firefox is basically the best option as a PDF viewer too.  If you're on Linux Mint (Cinnamon) or macOS, their preview apps are great out of the box, so there's really no need to download or use the regular Firefox Edition.
 
-## Installation (Developer Edition ONLY)
+## Installation
+
+### Linux (Scripted)
+
+```sh
+(cd ~/Downloads && wget -O firefox-developer-edition-latest.tar.bz2 https://ftp.mozilla.org/pub/devedition/releases/78.0b3/linux-x86_64/en-US/firefox-78.0b3.tar.bz2)
+sudo tar -xvf ~/Downloads/firefox-developer-edition-latest.tar.bz2 -C /usr/local/
+sudo rm -rf /usr/local/firefox-dev
+sudo mv /usr/local/firefox/ /usr/local/firefox-dev/
+(cd ~/.local/share/applications/ && curl https://gist.githubusercontent.com/dsthedev/0bba503757a797175184e330e115276f/raw/firefox-dev.desktop --output firefox-dev.desktop --silent)
+```
 
 ### Linux (Manual)
 
 1. Download from the [Mozilla website](https://www.mozilla.org/en-US/firefox/developer/)
 2. Extract & rename to `firefox_dev` and `mv` to `/usr/local`
+   1. `bunzip firefox-78.0b3.tar.bz2 && tar -xf firefox-78.0b3.tar && sudo mv firefox /usr/local/firefox_dev`
 3. Create this file `~/.local/share/applications/firefox_dev.desktop` and enter this content:
 
 ```conf
@@ -30,6 +43,14 @@ Now Firefox Dev Edition should be available via the Application Screen.
 
 **Note:** If the launcher isn't trusted, change that with this: `chmod +x ~/.local/share/applications/firefox_dev.desktop`
 
+## Customize
+
+1. Remove Title Bar & Drag Space
+2. Toolbars: Disable Menu, Enable Bookmarks
+3. Theme is Dark
+4. Density is Compact
+5. Cleanup icons and bookmarks in toolbar.
+
 ## Preferences
 
 ### General
@@ -38,19 +59,20 @@ Now Firefox Dev Edition should be available via the Application Screen.
 
 ##### Startup
 
-- Restore previous session: `false`
-  - _I prefer to have a fresh start every time I open a browser_
-- Always check if Firefox is your default browser: `false`
-  - _My preferred default browser is Opera_
+| Setting                                         | Value   | Reason                                                               |
+| ----------------------------------------------- | ------- | -------------------------------------------------------------------- |
+| Restore previous session                        | `false` | I prefer to have a fresh start every time I open a browser           |
+| Warn you when quitting the browser              | `false` | Disabled from parent option ^^^                                      |
+| Always check if Firefox is your default browser | `false` | Sometimes true, especially for regular edition on new linux machines |
 
 ##### Tabs
 
-- `Ctrl+Tab` cycles through tabs in recently used order: `false`
-  - _I prefer a consistent and predictable order_
-- Open links in tabs instead of new windows: `true`
-  - _It's kind of why we created tabs in the first place, right?_
-- When you open a link in a new tab, switch to it immediately: `false`
-  - _Most links I click are meant to be read later, not immediately_
+
+| Setting                                                     | Value   | Reason                                                          |
+| ----------------------------------------------------------- | ------- | --------------------------------------------------------------- |
+| `Ctrl+Tab` cycles through tabs in recently used order       | `false` | I prefer a consistent and predictable order                    |
+| Open links in tabs instead of new windows                   | `true`  | It's kind of why we created tabs in the first place, right?    |
+| When you open a link in a new tab, switch to it immediately | `false` | Most links I click are meant to be read later, not immediately |
 
 #### Language and Appearance
 
