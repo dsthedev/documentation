@@ -1,5 +1,9 @@
 # Visual Studio Code
 
+Update 2021.11.28:  Holy cow, VSCode just launched vscode.dev/ with the ability to directly edit files via a web-based browser version.  Bonus: you can login to your github repo directly from it (like I am now) to alter a codebase entirely from a browser.
+
+Wow, just... wow.
+
 ## Installation
 
 ### Windows / Mac Install
